@@ -1,0 +1,9 @@
+params,mean_test_score,std_test_score
+"{'clf__l2_regularization': 0.0, 'clf__learning_rate': 0.03, 'clf__max_leaf_nodes': 15}",0.2242405063291139,0.005178282827615888
+"{'clf__l2_regularization': 0.0, 'clf__learning_rate': 0.03, 'clf__max_leaf_nodes': 31}",0.22527848101265824,0.005775343332692789
+"{'clf__l2_regularization': 0.0, 'clf__learning_rate': 0.1, 'clf__max_leaf_nodes': 15}",0.22535443037974684,0.005168774649099854
+"{'clf__l2_regularization': 0.0, 'clf__learning_rate': 0.1, 'clf__max_leaf_nodes': 31}",0.22365822784810127,0.00486764412230332
+"{'clf__l2_regularization': 1.0, 'clf__learning_rate': 0.03, 'clf__max_leaf_nodes': 15}",0.22358227848101264,0.006558452496647141
+"{'clf__l2_regularization': 1.0, 'clf__learning_rate': 0.03, 'clf__max_leaf_nodes': 31}",0.22453164556962024,0.006158276633472703
+"{'clf__l2_regularization': 1.0, 'clf__learning_rate': 0.1, 'clf__max_leaf_nodes': 15}",0.2247341772151899,0.006407539422312265
+"{'clf__l2_regularization': 1.0, 'clf__learning_rate': 0.1, 'clf__max_leaf_nodes': 31}",0.22412658227848098,0.006107958931896307

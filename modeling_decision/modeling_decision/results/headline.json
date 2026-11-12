@@ -1,0 +1,294 @@
+{
+  "split": {
+    "encounters_after_exclusions": 99343,
+    "patients": 69990,
+    "share_encounters_from_repeat_patients": 0.4599619500115761,
+    "train_encounters": 79475,
+    "test_encounters": 19868,
+    "test_patients": 14013,
+    "train_readmit_rate": 0.11389745202893992,
+    "test_readmit_rate": 0.11385141936782767
+  },
+  "kmeans_k": 8,
+  "cluster_cv": {
+    "logistic_cv": 0.2128860759493671,
+    "logistic_plus_cluster_cv": 0.2134810126582279
+  },
+  "tuned": {
+    "logistic_l1": {
+      "clf__C": 0.3
+    },
+    "gbm": {
+      "clf__l2_regularization": 0.0,
+      "clf__learning_rate": 0.1,
+      "clf__max_leaf_nodes": 15
+    }
+  },
+  "precision_at_40": {
+    "N=200": {
+      "baseline_prior_visits": {
+        "precision": 0.19751262626262628,
+        "lo": 0.18112244897959184,
+        "hi": 0.21400353535353536,
+        "caught_per_week": 7.900505050505052,
+        "diff_vs_ref": 0.0,
+        "diff_lo": 0.0,
+        "diff_hi": 0.0
+      },
+      "baseline_oldest": {
+        "precision": 0.12696969696969698,
+        "lo": 0.1154040404040404,
+        "hi": 0.13801020408163264,
+        "caught_per_week": 5.078787878787879,
+        "diff_vs_ref": -0.0705429292929293,
+        "diff_lo": -0.08775819418676566,
+        "diff_hi": -0.05331548907441763
+      },
+      "random": {
+        "precision": 0.11405303030303031,
+        "lo": 0.10378787878787879,
+        "hi": 0.12450618686868688,
+        "caught_per_week": 4.5621212121212125,
+        "diff_vs_ref": -0.08345959595959597,
+        "diff_lo": -0.09772727272727269,
+        "diff_hi": -0.06861774634096063
+      },
+      "logistic_l1": {
+        "precision": 0.2205429292929293,
+        "lo": 0.20404040404040402,
+        "hi": 0.23500510204081634,
+        "caught_per_week": 8.821717171717172,
+        "diff_vs_ref": 0.023030303030303012,
+        "diff_lo": 0.01186868686868689,
+        "diff_hi": 0.0318181818181818
+      },
+      "gbm": {
+        "precision": 0.2266540404040404,
+        "lo": 0.21085858585858586,
+        "hi": 0.24243238636363637,
+        "caught_per_week": 9.066161616161617,
+        "diff_vs_ref": 0.029141414141414135,
+        "diff_lo": 0.019642857142857156,
+        "diff_hi": 0.03838383838383838
+      }
+    },
+    "N=100": {
+      "baseline_prior_visits": {
+        "precision": 0.15580176767676768,
+        "lo": 0.14589583333333334,
+        "hi": 0.16629556902985074,
+        "caught_per_week": 6.232070707070707,
+        "diff_vs_ref": 0.0,
+        "diff_lo": 0.0,
+        "diff_hi": 0.0
+      },
+      "baseline_oldest": {
+        "precision": 0.12331439393939395,
+        "lo": 0.11504783163265306,
+        "hi": 0.13144570707070707,
+        "caught_per_week": 4.932575757575758,
+        "diff_vs_ref": -0.03248737373737373,
+        "diff_lo": -0.042375948383084575,
+        "diff_hi": -0.022829023654916524
+      },
+      "random": {
+        "precision": 0.11416035353535355,
+        "lo": 0.10637755102040816,
+        "hi": 0.12175233585858586,
+        "caught_per_week": 4.566414141414142,
+        "diff_vs_ref": -0.04164141414141413,
+        "diff_lo": -0.04975306122448981,
+        "diff_hi": -0.03443558673469388
+      },
+      "logistic_l1": {
+        "precision": 0.17400883838383838,
+        "lo": 0.16344839680636686,
+        "hi": 0.184406344843027,
+        "caught_per_week": 6.960353535353535,
+        "diff_vs_ref": 0.0182070707070707,
+        "diff_lo": 0.012311509960972366,
+        "diff_hi": 0.02336683417085425
+      },
+      "gbm": {
+        "precision": 0.1752462121212121,
+        "lo": 0.16446700507614215,
+        "hi": 0.18505524497487438,
+        "caught_per_week": 7.009848484848485,
+        "diff_vs_ref": 0.01944444444444443,
+        "diff_lo": 0.01388573232323233,
+        "diff_hi": 0.024234887136672836
+      }
+    },
+    "N=400": {
+      "baseline_prior_visits": {
+        "precision": 0.24711734693877552,
+        "lo": 0.22192602040816325,
+        "hi": 0.27151096938775504,
+        "caught_per_week": 9.88469387755102,
+        "diff_vs_ref": 0.0,
+        "diff_lo": 0.0,
+        "diff_hi": 0.0
+      },
+      "baseline_oldest": {
+        "precision": 0.12818877551020408,
+        "lo": 0.11224489795918366,
+        "hi": 0.14387755102040817,
+        "caught_per_week": 5.127551020408163,
+        "diff_vs_ref": -0.11892857142857144,
+        "diff_lo": -0.14752423469387757,
+        "diff_hi": -0.0913220131802721
+      },
+      "random": {
+        "precision": 0.11329081632653062,
+        "lo": 0.0999872448979592,
+        "hi": 0.12756224489795917,
+        "caught_per_week": 4.531632653061225,
+        "diff_vs_ref": -0.1338265306122449,
+        "diff_lo": -0.15750382653061226,
+        "diff_hi": -0.10559948979591838
+      },
+      "logistic_l1": {
+        "precision": 0.26704081632653065,
+        "lo": 0.24285714285714283,
+        "hi": 0.2913265306122449,
+        "caught_per_week": 10.681632653061225,
+        "diff_vs_ref": 0.019923469387755133,
+        "diff_lo": 0.004591836734693876,
+        "diff_hi": 0.03724489795918362
+      },
+      "gbm": {
+        "precision": 0.26923469387755106,
+        "lo": 0.24488520408163264,
+        "hi": 0.29439056122448976,
+        "caught_per_week": 10.769387755102041,
+        "diff_vs_ref": 0.02211734693877554,
+        "diff_lo": 0.0056094387755101635,
+        "diff_hi": 0.04010921556122445
+      }
+    },
+    "first_encounter_only_N=200": {
+      "baseline_prior_visits": {
+        "precision": 0.12458928571428571,
+        "lo": 0.1125,
+        "hi": 0.1382142857142857,
+        "caught_per_week": 4.9835714285714285,
+        "diff_vs_ref": 0.0,
+        "diff_lo": 0.0,
+        "diff_hi": 0.0
+      },
+      "baseline_oldest": {
+        "precision": 0.11110714285714285,
+        "lo": 0.1,
+        "hi": 0.12250000000000001,
+        "caught_per_week": 4.444285714285714,
+        "diff_vs_ref": -0.01348214285714286,
+        "diff_lo": -0.02892857142857143,
+        "diff_hi": -0.000714285714285709
+      },
+      "random": {
+        "precision": 0.09030357142857143,
+        "lo": 0.08034821428571429,
+        "hi": 0.10107142857142856,
+        "caught_per_week": 3.612142857142857,
+        "diff_vs_ref": -0.03428571428571428,
+        "diff_lo": -0.0464285714285714,
+        "diff_hi": -0.02284821428571429
+      },
+      "logistic_l1": {
+        "precision": 0.16717857142857143,
+        "lo": 0.15285714285714286,
+        "hi": 0.18072321428571428,
+        "caught_per_week": 6.687142857142857,
+        "diff_vs_ref": 0.04258928571428572,
+        "diff_lo": 0.02857142857142858,
+        "diff_hi": 0.05358035714285715
+      },
+      "gbm": {
+        "precision": 0.17035714285714285,
+        "lo": 0.15641964285714285,
+        "hi": 0.18286607142857142,
+        "caught_per_week": 6.814285714285714,
+        "diff_vs_ref": 0.04576785714285714,
+        "diff_lo": 0.0325,
+        "diff_hi": 0.0564375
+      }
+    }
+  },
+  "slice_overall": {
+    "baseline_prior_visits": {
+      "recall_at_budget": 0.34988913525498894,
+      "precision_of_called": 0.19924242424242425
+    },
+    "logistic_l1": {
+      "recall_at_budget": 0.3853658536585366,
+      "precision_of_called": 0.21944444444444444
+    },
+    "gbm": {
+      "recall_at_budget": 0.3946784922394678,
+      "precision_of_called": 0.22474747474747475
+    }
+  },
+  "worst_slice": {
+    "baseline_prior_visits": {
+      "model": "baseline_prior_visits",
+      "variable": "prior_inpatient",
+      "level": "0",
+      "kind": "planned",
+      "n_encounters": 13204,
+      "n_patients": 12492,
+      "readmissions": 1132,
+      "called": 0,
+      "caught": 0,
+      "recall_at_budget": 0.0,
+      "recall_lo": 0.0,
+      "recall_hi": 0.0,
+      "precision_of_called": NaN,
+      "precision_lo": NaN,
+      "precision_hi": NaN,
+      "small": false
+    },
+    "logistic_l1": {
+      "model": "logistic_l1",
+      "variable": "prior_inpatient",
+      "level": "0",
+      "kind": "planned",
+      "n_encounters": 13204,
+      "n_patients": 12492,
+      "readmissions": 1132,
+      "called": 860,
+      "caught": 157,
+      "recall_at_budget": 0.13869257950530034,
+      "recall_lo": 0.11914955583848201,
+      "recall_hi": 0.15831974113437863,
+      "precision_of_called": 0.18255813953488373,
+      "precision_lo": 0.15813674183400464,
+      "precision_hi": 0.2072487360793926,
+      "small": false
+    },
+    "gbm": {
+      "model": "gbm",
+      "variable": "prior_inpatient",
+      "level": "0",
+      "kind": "planned",
+      "n_encounters": 13204,
+      "n_patients": 12492,
+      "readmissions": 1132,
+      "called": 824,
+      "caught": 168,
+      "recall_at_budget": 0.14840989399293286,
+      "recall_lo": 0.12802392056566872,
+      "recall_hi": 0.1691650203612032,
+      "precision_of_called": 0.20388349514563106,
+      "precision_lo": 0.1765367529202846,
+      "precision_hi": 0.23167997570430712,
+      "small": false
+    }
+  },
+  "config": {
+    "seed": 0,
+    "budget": 40,
+    "week_n": 200,
+    "n_boot": 1000,
+    "quick": false
+  }
+}
